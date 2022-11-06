@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Sepeti - Online Yemek Siparisi</title>
+    <link rel="icon" type="image/x-icon" href="img/yemeksepetifavIcon.jpg">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fbb7b1bd9.js" crossorigin="anonymous"></script>
+</head>
+<body onscroll="myFunc()">
+
+    <!--Navbar-->
+
+    <nav id="myNav" class="container-fluid"  >
+        
+        <div class="logo-wrapper"><img src="img/Yemeksepeti_logo.svg.png" alt="menu-logo"></div>
+        
+        <a id="en-text" class="menu-item" href="#">
+            <span>EN</span>
+        </a>    
+        
+        <a id="user-logo-div" class="menu-item" href="welcome.html">
+            <i id="user-logo" class="fa-solid fa-user"></i>
+            <span id="girisText">Giris Yap</span>
+        </a>      
+
+        <a id="basketDiv" class="menu-item" href="#">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>     
+
+    </nav>
+
+
+    <!--Image Gallery-->
+
+    <div id="img-wrapper" class="container-fluid" >
+
+        <div id="text-wrapper" class="container">
+            <p id="text-img">
+                Yemek, market ve günlük tüm ihtiyaçların için adresini seç, çevrendeki seçenekleri gör!
+            </p>
+
+            <div id="adress-wrapper">
+                <div id="adress-input-wrapper">
+                    <span id="adress-placeholder" for="adress-input">Adresini Belirle veya Sec</span>
+                    <input id="adress-input" type="text" onfocus="">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                </div>
+
+                <button id="btn-list">
+                    Listele
+                </button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--Hidden Headtitle-->
+
+    <div class="hidden-headtitle-wrapper container" >
+
+        <p class="hidden-text">Ortaklar</p>
+
+        <p class="main-text">İş ortağımız olun</p>
+
+    </div>
+
+    <!--Mid-Section-->
+
+    <div id="mid-wrapper" class="container-fluid" >
+        
+        <div class="container">
+            <div id="mid-text-box">
+                <p id="mid-text-title">
+                    Hemen katılın, Yemeksepeti ile satışlarınızı katlamaya başlayın
+                </p>
+                <p id="mid-text">
+                    Binlerce yeni kullanıcıya ulaşabilmek ister misiniz? Sadece kendi semtinizdekiler değil, artık çevre semtlerdeki binlerce kullanıcı da işletmenizden sipariş verebilecek. Bir ev, bir plaza, bir işyeri ya da üniversite kampüsü, hizmet vermek istediğiniz kim varsa artık müşteriniz.
+                    <br><br>
+                    Gayet basit! Menünüzü listeliyoruz ve sipariş bilgilerini size ulaştırıyoruz. Sipariş teslimatını dilerseniz kendiniz yapabiliyorsunuz, dilerseniz Yemeksepeti sizin adına kullanıcıya ulaştırıyor
+                    <br><br>
+                    Hemen ailemize katılabilir ve muhteşem avantajlara sahip iş ortaklarımızdan biri olabilirsiniz.
+                </p>
+                <a href="#" id="mid-btn">Baslayalim</a>
+            </div>
+        </div>
+
+
+    </div>    
+
+    <!--Hidden Headtitle-2-->
+
+    <div id="hidden-headtitle-wrapper-2" class="hidden-headtitle-wrapper container" >
+
+        <p class="hidden-text">Şehirler</p>
+
+        <p class="main-text">Türkiye'nin her şehrindeyiz!</p>
+    </div>
+
+    <!--Cities Image Gallery-->
+
+    <div id="city-wrapper" class="container" >
+
+        <a href="#" class="city-box">
+            <div class="city-text">Ankara</div>
+            <button class="city-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+        <a href="#" class="city-box">
+            <div class="city-text">Antalya</div>
+            <button class="city-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+        <a href="#" class="city-box">
+            <div class="city-text">Bursa</div>
+            <button class="city-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+        <a href="#" class="city-box">
+            <div class="city-text">Istanbul</div>
+            <button class="city-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+        <a href="#" class="city-box">
+            <div class="city-text">Izmir</div>
+            <button class="city-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </a>
+
+    </div>
+
+
+    <!--Hidden Headtitle-3-->
+
+    <div id="hidden-headtitle-wrapper-3" class="hidden-headtitle-wrapper container" >
+
+        <p class="hidden-text">Uygulama
+        </p>
+
+        <p id="main-text-mobile" class="main-text">Mobil uygulamamızı indirin
+        </p>
+    </div>
+
+
+    <!--Application Section-->
+
+    <div id="application-fluid" class="container-fluid">
+
+        <div id="application-wrapper" class="container">
+
+
+            <div id="application-wrapper-left" class="">
+
+                <p class="application-title">
+                    Yemek ve market ihtiyaçlarının tamamı için hemen indir!
+                </p>
+    
+                <p class="application-text">
+                    Yemek, hızlı market ya da çevredeki esnaflardan tüm ihtiyaçların dakikalar içinde kapında. Yemeksepeti’ni indir, sepetini oluşturup siparişini ver, online ya da kapıda dilediğin gibi öde.
+                </p>
+                
+                <div id="app-logo-wrapper">
+                    <a href="#"><img src="img/apple.png" alt="apple" width="`120px"></a>
+                    <a href="#"><img src="img/google store.png" alt="google"></a>
+                    <a href="#"><img src="img/Huawei_AppGallery_white_badge_EN.png" alt="huawei"></a>
+                </div>
+    
+            </div>
+
+
+            <div id="phone-wrapper">
+                <img src="img/—Pngtree—mobile phone frame mockup png_5843187.png" alt="">
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!--Brand Definition Section-->
+
+    <div id="brand-def-wrapper" class="container">
+
+        <p>
+            Türkiye'nin 81 şehri ve KKTC'de, 50 bini aşkın restoran iş ortağımızla, Türkiye’de online yemek siparişi denince ilk akla gelen markayız! Restoran zincirleri başta olmak üzere, civarınızdaki en sevdiğiniz restoranlardan kolayca sipariş verebilirsiniz.
+        </p>
+
+        <p>
+            Bunun yanında, hızlı market alışverişine ihtiyacınız varsa, Yemeksepeti Market hizmetinizde! Binlerce market ürünü dilediğiniz anda, dakikalar içinde gelsin!
+        </p>
+
+        <p>
+            Restoranınızı seçin, istediğiniz yemekleri sepete ekleyin, online ya da kapıda dilediğiniz gibi ödeyin. Gerisi kolay, siparişiniz hızlıca kapınızda!
+        </p>
+
+        <p>
+            Yemeksepeti Mahalle de burada! Çevrenizdeki bildiğiniz, güvendiğiniz işletme ve esnaflar; marketten kasaba, şarküteriden manava, balıkçıdan petshopa, tüm kampanyaları ve fırsatlarıyla siparişiniz için hazır.
+        </p>
+        <br>
+        <div id="brand-sub-wrapper">
+            <h3 id="brand-title">
+                Yemeksepeti’nde sizi neler bekliyor?
+            </h3>
+            
+            <div>
+                <p>Yemek siparişi ya da market alışverişinde onlarca mutfak ve kategori, binlerce çeşit ürün!
+                </p>
+                <p>Yemek ve market ihtiyaçlarınızda her gün on binlerce indirim!
+                </p>
+                <p>Online ya da kapıda, dilediğiniz gibi ödeme seçeneği!
+                </p>
+                <p>Siparişinizle ilgili size her zaman destek olmaya hazır, 7/24 Canlı Yardım ekibi!
+                </p>
+            </div>
+            
+        </div>
+        <br>
+        <p>
+            Tek yapmanız gereken ihtiyacınızı düşünmek ve çevrenizdeki seçeneklere göz atmak!
+        </p>
+        <br>
+        <h4>
+            Yemeksepeti yanında, aklındaysa kapında!
+        </h4>
+
+    </div>
+
+    <!--Bottom Links and Buttons-->
+
+    <div id="bottom-link-wrapper" class="container">
+        
+        <div id="bottom-logo-wrapper"><img src="img/Yemeksepeti_logo.svg.png" alt="menu-logo"></div>   
+
+        <div id="link-wrapper">
+            <a class="link-btn" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="link-btn" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="link-btn" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="link-btn" href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+    </div>
+    
+
+    <!--Upper Footer-->
+
+    <div id="upper-footer-wrapper" class="container">
+
+        <div id="upper-policy-wrapper">
+
+            <div id="upper-btn-wrapper">
+                <a href="#" id="upper-btn">
+                    English
+                </a>
+            </div>
+
+            <div id="policy-left">
+                © 2022 Yemeksepeti
+            </div>
+
+            <div id="policy-right">
+                
+                <a href="#" class="policy-links">Kullanım Koşulları</a>
+                <a href="#" class="policy-links">S.S.S. ve İşlem Rehberi</a>
+                <a href="#" class="policy-links">Basin</a>
+                <a href="#" class="policy-links">Çerez Politikası </a>
+                <a href="#" class="policy-links">Iletisim</a>
+                <a href="#" class="policy-links">Bizimle Calisin</a>
+                <a href="#" class="policy-links">Aydinlatma Metni</a>
+                <a href="#" class="policy-links">Kisisel Verilerin Korunmasi ve Islenmesi ve Gizlilik Politikasi</a>
+                <a href="#" class="policy-links">Bilgi Toplumu Hizmetleri</a>
+
+            </div>
+
+            <div id="code-wrapper">
+                <img src="img/tr-go.jpg" alt="">
+                <img src="img/etbis-logo.jfif" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Location Section Mutfaklar-->
+
+    <div id="mutfaklar-container" class="container">
+
+        <h2 class="sub-mutfaklar-box-main-head">
+            Mutfaklar
+        </h2>
+
+        <div class="sub-mutfaklar-box-container">
+            <div class="sub-mutfaklar-box">
+            
+                <h3 class="sub-mutfaklar-box-head">
+                    Istanbul
+                </h3>
+                
+                <div class="sub-mutfaklar-text">Burger</div>
+                <div class="sub-mutfaklar-text">Pizza</div>
+                <div class="sub-mutfaklar-text">Kebap & Turk Mutfagi</div>
+                <div class="sub-mutfaklar-text">Doner</div>
+                <div class="sub-mutfaklar-text">Tost & Sandvic</div>
+                <div class="sub-mutfaklar-text">Tavuk</div>
+                <div class="sub-mutfaklar-text">Pide & Lahmacun</div>
+                <div class="sub-mutfaklar-text">Tatli</div>
+    
+    
+            </div>
+    
+            <div class="sub-mutfaklar-box">
+                
+                <h3 class="sub-mutfaklar-box-head">
+                    Ankara
+                </h3>
+                
+                <div class="sub-mutfaklar-text">Döner</div>
+                <div class="sub-mutfaklar-text">Burger</div>
+                <div class="sub-mutfaklar-text">Kebap & Türk Mutfağı</div>
+                <div class="sub-mutfaklar-text">Pizza</div>
+                <div class="sub-mutfaklar-text">Çiğ Köfte</div>
+                <div class="sub-mutfaklar-text">Tavuk</div>
+                <div class="sub-mutfaklar-text">Pide & Lahmacun</div>
+                <div class="sub-mutfaklar-text">Tost & Sandviç</div>
+    
+    
+            </div>
+    
+            <div class="sub-mutfaklar-box">
+                
+                <h3 class="sub-mutfaklar-box-head">
+                    Izmir
+                </h3>
+
+                <div class="sub-mutfaklar-text">Döner</div>
+                <div class="sub-mutfaklar-text">Pizza</div>
+                <div class="sub-mutfaklar-text">Pide & Lahmacun</div>
+                <div class="sub-mutfaklar-text">Burger</div>
+                <div class="sub-mutfaklar-text">Kebap & Türk Mutfağı</div>
+                <div class="sub-mutfaklar-text">Tost & Sandviç</div>
+                <div class="sub-mutfaklar-text">Çiğ Köfte</div>
+                <div class="sub-mutfaklar-text">Tavuk</div>
+    
+    
+            </div>
+    
+            <div class="sub-mutfaklar-box">
+                
+                <h3 class="sub-mutfaklar-box-head">
+                    Antalya
+                </h3>
+                
+                <div class="sub-mutfaklar-text">Burger</div>
+                <div class="sub-mutfaklar-text">Doner</div>
+                <div class="sub-mutfaklar-text">Kebap & Turk Mutfagi</div>
+                <div class="sub-mutfaklar-text">Pizza</div>
+                <div class="sub-mutfaklar-text">Tost & Sandvic</div>
+                <div class="sub-mutfaklar-text">Tavuk</div>
+                <div class="sub-mutfaklar-text">Çiğ Köfte</div>
+                <div class="sub-mutfaklar-text">Pide & Lahmacun</div>
+    
+    
+            </div>
+        </div>
+
+    </div>
+
+    
+<!--Diğer Şehirler Section Mutfaklar-->
+
+<div id="cities-container" class="container">
+
+    <h2 class="sub-mutfaklar-box-main-head">
+        Diğer Şehirler
+    </h2>
+
+    <div class="sub-mutfaklar-box-container">
+        <div class="sub-mutfaklar-box">
+            <div class="sub-mutfaklar-text">Adana</div>
+            <div class="sub-mutfaklar-text">Adıyaman</div>
+            <div class="sub-mutfaklar-text">Afyonkarahisar</div>
+            <div class="sub-mutfaklar-text">Ağrı</div>
+            <div class="sub-mutfaklar-text">Amasya</div>
+            <div class="sub-mutfaklar-text">Artvin</div>
+            <div class="sub-mutfaklar-text">Aydın</div>
+            <div class="sub-mutfaklar-text">Balıkesir</div>
+            <div class="sub-mutfaklar-text">Bilecik</div>
+            <div class="sub-mutfaklar-text">Bingöl</div>
+            <div class="sub-mutfaklar-text">Bitlis</div>
+            <div class="sub-mutfaklar-text">Bolu</div>
+            <div class="sub-mutfaklar-text">Burdur</div>
+            <div class="sub-mutfaklar-text">Çanakkale</div>
+            <div class="sub-mutfaklar-text">Çankırı</div>
+            <div class="sub-mutfaklar-text">Çorum</div>
+            <div class="sub-mutfaklar-text">Denizli</div>
+            <div class="sub-mutfaklar-text">Diyarbakır</div>
+            <div class="sub-mutfaklar-text">Edirne</div>
+            <div class="sub-mutfaklar-text">Elazığ</div>
+            <div class="sub-mutfaklar-text">Erzincan</div>
+            <div class="sub-mutfaklar-text">Erzurum</div>
+            <div class="sub-mutfaklar-text">Eskişehir</div>
+            <div class="sub-mutfaklar-text">Gaziantep</div>
+            <div class="sub-mutfaklar-text">Giresun</div>
+            <div class="sub-mutfaklar-text">Gümüşhane</div>
+            
+
+        </div>
+
+        <div class="sub-mutfaklar-box">
+            <div class="sub-mutfaklar-text">Hakkari</div>
+            <div class="sub-mutfaklar-text">Hatay</div>
+            <div class="sub-mutfaklar-text">Isparta</div>
+            <div class="sub-mutfaklar-text">Mersin</div>
+            <div class="sub-mutfaklar-text">Kars</div>
+            <div class="sub-mutfaklar-text">Kastamonu</div>
+            <div class="sub-mutfaklar-text">Kayseri</div>
+            <div class="sub-mutfaklar-text">Kırklareli</div>
+            <div class="sub-mutfaklar-text">Kırşehir</div>
+            <div class="sub-mutfaklar-text">Kocaeli</div>
+            <div class="sub-mutfaklar-text">Konya</div>
+            <div class="sub-mutfaklar-text">Kütahya</div>
+            <div class="sub-mutfaklar-text">Malatya</div>
+            <div class="sub-mutfaklar-text">Manisa</div>
+            <div class="sub-mutfaklar-text">Kahramanmaraş</div>
+            <div class="sub-mutfaklar-text">Mardin</div>
+            <div class="sub-mutfaklar-text">Muğla</div>
+            <div class="sub-mutfaklar-text">Muş</div>
+            <div class="sub-mutfaklar-text">Nevşehir</div>
+            <div class="sub-mutfaklar-text">Niğde</div>
+            <div class="sub-mutfaklar-text">Ordu</div>
+            <div class="sub-mutfaklar-text">Rize</div>
+            <div class="sub-mutfaklar-text">Sakarya</div>
+            <div class="sub-mutfaklar-text">Samsun</div>
+            <div class="sub-mutfaklar-text">Sakarya</div>
+            <div class="sub-mutfaklar-text">Siirt</div>
+            <div class="sub-mutfaklar-text">Sinop</div>
+            
+        </div>
+
+        <div class="sub-mutfaklar-box">
+            <div class="sub-mutfaklar-text">Sivas</div>
+            <div class="sub-mutfaklar-text">Tekirdağ</div>
+            <div class="sub-mutfaklar-text">Tokat</div>
+            <div class="sub-mutfaklar-text">Trabzon</div>
+            <div class="sub-mutfaklar-text">Tunceli</div>
+            <div class="sub-mutfaklar-text">Şanlıurfa</div>
+            <div class="sub-mutfaklar-text">Uşak</div>
+            <div class="sub-mutfaklar-text">Van</div>
+            <div class="sub-mutfaklar-text">Yozgat</div>
+            <div class="sub-mutfaklar-text">Zonguldak</div>
+            <div class="sub-mutfaklar-text">Aksaray</div>
+            <div class="sub-mutfaklar-text">Karaman</div>
+            <div class="sub-mutfaklar-text">Kırıkkale</div>
+            <div class="sub-mutfaklar-text">Batman</div>
+            <div class="sub-mutfaklar-text">Şırnak</div>
+            <div class="sub-mutfaklar-text">Ardahan</div>
+            <div class="sub-mutfaklar-text">Iğdır</div>
+            <div class="sub-mutfaklar-text">Yalova</div>
+            <div class="sub-mutfaklar-text">Kilis</div>
+            <div class="sub-mutfaklar-text">Osmaniye</div>
+            <div class="sub-mutfaklar-text">Düzce</div>
+            <div class="sub-mutfaklar-text">KKTC</div>
+            <div class="sub-mutfaklar-text">Bütün Şehir ve Bölgeler</div>
+        </div>
+        <div class="sub-mutfaklar-box">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!--Footer-->
+
+<footer class="container">
+    <a href="#"><img src="img/footer-logo.png" alt=""></a>
+    <a href="#"><img src="img/google store.png" alt=""></a>
+    <a href="#"><img src="img/apple.png" alt=""></a>
+</footer>
+
+
+
+
+
+<script src="myScriipt.js"></script> 
+</body>
+</html>

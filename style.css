@@ -1,0 +1,1229 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Montserrat' ;
+}
+
+.container{
+    margin: 0px auto;
+    width: 1320px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Navbar*/
+
+nav{
+    display: flex;
+    padding: 18px 16px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 12;
+}
+
+
+.logo-wrapper{ /*Yemek Sepeti Logo Div*/
+    flex-grow: 1;    
+}
+
+.logo-wrapper img{/*Yemek Sepeti Logo*/
+    width: 120px;
+    height: 23px;
+}
+
+.logo-wrapper img:hover{
+    cursor: pointer;
+}
+
+.menu-item{ /*Menu Right Side*/
+    color: #333;
+    padding: 0px 16px;
+    border-left: 1px solid rgba(211, 211, 211, 0.488);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+}
+
+#en-text{
+    font-size: 11px;
+    font-weight: 300;
+    color: #333;
+}
+
+#girisText{ 
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Icons */
+
+.fa-user{
+    color: #fff;
+    background-color: #ff006e;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.fa-bag-shopping{
+    color: #ff006e;
+    font-size: 21px;
+    margin-left: 6px;
+}
+
+/*Image and Text*/
+
+#img-wrapper{
+    height: 640px;
+    background-image: url(img/Food-tiny.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#text-wrapper{
+    position: relative;
+}
+
+#text-img{ /* Text Starting with "Yemek" */
+    width: 75%;
+    font-size: 40px;
+    color: #fff;
+    background-color: #ff006f88;
+    padding: 48px;
+    position: absolute;
+    top: 220px;
+}
+
+#adress-wrapper{
+    width: 1140px;
+    background-color: #fff;
+    display: flex;
+    padding: 12px;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 500px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+#adress-wrapper{
+}
+
+#adress-input-wrapper{
+    width: 85%;
+    position: relative;
+}
+
+#adress-input{
+    width: 100%;
+    height: 60px;
+    border-color: rgba(0, 0, 0, 0.426);
+    border-radius: 8px;
+    padding-left: 12px;
+    font-size: 19px;
+    transition: all 0.5s ease;
+}
+
+#adress-placeholder{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+}
+
+
+.fa-location-crosshairs{
+    color: #ff006e;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.fa-location-crosshairs:hover{
+    cursor: pointer;
+}
+
+
+#btn-list{
+    padding: 24px 36px;
+    display: inline-block;
+    background-color: #ff006e;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+
+#btn-list:hover{
+    cursor: pointer;
+    background-color: #bb0051;
+    box-shadow: 0px 0px 0px 1px #bb0051;
+}
+
+
+/*Hidden Headtitle*/
+
+.hidden-headtitle-wrapper{
+    position: relative;
+    padding: 24px 0px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.hidden-text{
+    position: absolute;
+    font-weight: 600;
+    font-size: 150px;
+    top: -60px;
+    z-index: 5;
+    opacity: 0.1;
+}
+
+.main-text{
+    font-size: 28px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+}
+
+/* Mid-Section */
+
+#mid-wrapper{
+    background-image: url(img/mid-section-tiny.jpg);
+    height: 420px;
+    position: relative;
+    z-index: 5;
+    background-size: cover;
+    background-position: center;
+}
+
+#mid-text-box{
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    box-shadow: 0px 0px 16px 8px rgba(128, 128, 128, 0.100);
+    padding: 32px;
+    position: absolute;
+    top: 42px;
+}
+
+#mid-text-title{
+    font-size: 22px;
+    padding: 12px 0px;
+}
+
+#mid-text{
+    font-size: 15px;
+    color: lightslategray;
+}
+
+#mid-btn{
+    background-color: #ff006e;
+    color: white;
+    display: inline-block;
+    padding: 16px 72px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+#mid-btn:hover{
+    cursor: pointer;
+    background-color: #bb0051;
+    box-shadow: 0px 0px 0px 1px #bb0051;
+}
+
+
+/* Hidden Headtitle-2 */
+
+#hidden-headtitle-wrapper-2{
+    margin-top: 180px;
+}
+
+
+/*Cities Image Gallery*/
+
+#city-wrapper{
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+}
+
+.city-box{
+    width: 240px;
+    height: 280px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+}
+
+.city-box:hover{
+    background-size: 105% 105%;
+}
+
+.city-box:nth-child(1){
+    background-image: url(img/ankara-kalesi-tiny.jpg);
+}
+
+.city-box:nth-child(2){
+    background-image: url(img/antalya-tiny.jpg);
+}
+
+.city-box:nth-child(3){
+    background-image: url(img/bursa-tiny.jpg);
+}
+
+.city-box:nth-child(4){
+    background-image: url(img/istanbul-tiny.jpg);
+}
+
+.city-box:nth-child(5){
+    background-image: url(img/izmir-tiny.jpg);
+}
+
+.city-text{
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+}
+
+.city-btn{
+    color: white;
+    background-color: crimson;
+    border-radius: 6px;
+    border: none;
+    padding:14px 16px;
+    font-size: 21px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+/*Application Section*/
+
+#application-fluid{
+    background-color: #ea004b;
+    display: flex;
+    padding: 64px;
+}
+
+#application-wrapper{
+    display: flex;
+}
+
+#application-wrapper-left{
+    width: 50%;
+}
+
+.application-title{
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 12px 0px;
+}
+
+.application-text{
+    margin: 42px auto;
+}
+
+#app-logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+
+#app-logo-wrapper img{
+    width: 140px;
+}
+
+#phone-wrapper{
+    position: relative;
+    
+}
+
+#phone-wrapper img{
+    position: absolute;
+    width: 640px;
+    top: -170px;
+    left: 30px;
+} 
+
+
+/*Brand-Definiton Section*/
+
+#brand-def-wrapper{
+    margin-top: 32px;
+    padding: 48px 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#brand-def-wrapper > p{
+    margin: 6px 0px;
+}
+
+#brand-sub-wrapper div{
+    margin-top: 24px;
+}
+
+
+#brand-sub-wrapper p{
+    padding-left: 24px;
+}
+
+#brand-sub-wrapper p::before{
+    content: "✓";
+    color: #ea004b;
+    padding-right: 6px;
+}
+
+
+/*<!--Bottom Links and Buttons-->*/
+
+#bottom-link-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 48px 0px;
+}
+
+#bottom-logo-wrapper{
+width: 50%;
+}
+
+#bottom-logo-wrapper img{
+width: 120px;
+height: 23px;
+}
+
+#link-wrapper{
+width: 50%;
+display: flex;
+justify-content: flex-end;
+}
+
+
+#bottom-link-wrapper a i{
+display: inline-block;
+border: 1px solid #888888;
+border-radius: 50%;
+padding: 6px;
+font-size: 19px;
+color: #333 ;
+margin-right: 6px;
+transition: all 0.3s ease;
+}
+
+#bottom-link-wrapper a i:hover{
+color: crimson ;
+border-color: crimson ;
+}
+
+
+/*Upper Footer Section*/
+
+
+#upper-footer-wrapper{
+    padding: 14px 0px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 1320px;
+}
+
+#upper-policy-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+
+#policy-left{
+    width: 50%;
+    font-size: 14px;
+    text-align: left;
+}
+
+#policy-right{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+#policy-right a{
+    font-size: 13px;
+    margin-right:12px;
+    color: #333;
+}
+
+#policy-right a:hover{
+    color: #bb0051;
+}
+
+#code-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 0px;
+    justify-content: flex-end;
+}
+
+#code-wrapper img{
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+#code-wrapper img:hover{
+    cursor: pointer;
+}
+
+#upper-btn-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    display: none;
+}
+
+#upper-btn{
+    border: 1px solid rgb(250, 0, 79);
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 12px 84px;
+    color: rgb(250, 0, 79);
+    display: inline-block;
+    font-size: 13px;
+}
+
+
+#upper-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px rgba(77, 1, 25, 0.503);
+}
+
+/*--Location Section Mutfaklar*/
+
+#mutfaklar-container{
+    padding: 42px 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sub-mutfaklar-box-main-head{
+    padding: 18px 0px;
+    font-size: 18px;
+}
+
+.sub-mutfaklar-box-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-mutfaklar-box-head{
+    font-size: 16px;
+    color: rgba(59, 59, 59, 0.750);
+}
+
+.sub-mutfaklar-text {
+    font-size: 15px;
+    padding: 4px 0px;
+    color: rgba(51, 51, 51, 0.800);
+    text-align: left;
+}
+
+.sub-mutfaklar-text:hover{
+    cursor: pointer;
+}
+
+#cities-container{
+    padding: 24px 0px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+#cities-container .sub-mutfaklar-box-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#cities-container .sub-mutfaklar-box{
+}
+
+footer{
+    display: flex;
+    padding-bottom: 52px
+}
+
+footer a{
+    width: 140px; 
+    height: 100px; 
+    display: flex;
+}
+
+footer a:first-child{
+    align-items: center;
+}
+
+footer a:first-child img{
+    width: 120px; 
+    height: 60px; 
+}
+
+footer a img{
+   display: block;
+   width: 100%;
+}
+
+/* ---------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 720px;
+        margin: 0px auto;
+    }
+
+    nav{
+        display: flex;
+        padding: 18px 16px;
+        background-color: white;
+        position: sticky;
+        top: 0px;
+        
+    }
+
+    .menu-item{
+        border: none;
+        
+    }
+
+    #en-text{
+        display: none;
+        
+    }
+
+    #menu-wrapper{
+        order: 1;
+        
+    }
+
+    
+
+    #girisText{
+        display: none;
+    }
+    
+
+    #logo-wrapper{
+        flex-grow: 1;  
+        order: 2;  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #basketDiv{
+        flex-grow: 1;
+        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #user-logo-div{
+        flex-grow: 1;
+        order:1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    /*Image and Text-XS*/
+
+    #img-wrapper{
+        height: 640px;
+        background-image: url(img/Food.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+    }
+    
+    #text-wrapper{
+        position: relative;
+    }
+    
+    #text-img{ /* Text Starting with "Yemek" */
+        width: 50%;
+        font-size: 30px;
+        color: #fff;
+        background-color: #ff006f88;
+        padding: 48px;
+        position: absolute;
+        top: 120px;
+    }
+    
+    #adress-wrapper{
+        width: 500px;
+        background-color:transparent;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        position: absolute;
+        top: 450px;
+        left: -15px;
+        border-radius: 2px;
+        box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    #adress-input-wrapper{
+        width: 100%;
+        position: relative;
+        margin-bottom: 12px;
+    }
+    
+    #adress-input{
+        width: 100%;
+        height: 60px;
+        border-color: rgba(0, 0, 0, 0.426);
+        border-radius: 8px;
+        padding-left: 12px;
+        font-size: 19px;
+        transition: all 0.5s ease;
+    }
+    
+    #adress-placeholder{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+    }
+    
+    
+    .fa-location-crosshairs{
+        color: #ff006e;
+        font-size: 18px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    .fa-location-crosshairs:hover{
+        cursor: pointer;
+    }
+    
+    
+    #btn-list{
+        padding: 24px 36px;
+        display: inline-block;
+        background-color: #ff006e;
+        border: none;
+        color: white;
+        font-size: 14px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+    
+    
+    #btn-list:hover{
+        cursor: pointer;
+        background-color: #bb0051;
+        box-shadow: 0px 0px 0px 1px #bb0051;
+    }
+    
+/*Hidden Headtitle-XS*/
+
+.hidden-headtitle-wrapper{
+    position: relative;
+    padding: 24px   0px;
+    margin-top: 24px;
+}
+
+
+.hidden-text{
+    position: absolute;
+    font-weight: 600;
+    font-size: 75px;
+    top: 20px;
+    z-index: 5;
+    opacity: 0.1;
+    padding-left: 24px;
+}
+
+.main-text{
+    font-size: 22px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: 10;
+    padding-left: 24px;
+}
+
+
+/* Mid-Section-XS*/
+
+#mid-wrapper{
+    background-image: url(img/mid-section.jpg);
+    height: 280px;
+    position: relative;
+    z-index: 5;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#mid-text-box{
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0px 0px 16px 8px rgba(128, 128, 128, 0.100);
+    padding: 24px;
+    position: absolute;
+    top: 220px;
+    left: 18px;
+}
+
+#mid-text-title{
+    font-size: 22px;
+    padding: 12px 0px;
+}
+
+#mid-text{
+    font-size: 15px;
+    color: lightslategray;
+}
+
+#mid-btn{
+    background-color: #ff006e;
+    color: white;
+    display: inline-block;
+    padding: 16px 72px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+
+#mid-btn:hover{
+    cursor: pointer;
+    background-color: #bb0051;
+    box-shadow: 0px 0px 0px 1px #bb0051;
+}
+
+
+/* Hidden Headtitle-2 */
+
+#hidden-headtitle-wrapper-2{
+    margin-top: 480px;
+}
+
+
+/*Cities Image Gallery*/
+
+#city-wrapper{
+    height: 280px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    width: 1140px;
+    overflow-x: scroll !important;
+}
+
+.city-box{
+    height: 280px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+    margin-right: 12px;
+}
+
+.city-box:hover{
+    background-size: 105% 105%;
+}
+
+.city-box:nth-child(1){
+    background-image: url(img/ankara-kalesi.jpg);
+}
+
+.city-box:nth-child(2){
+    background-image: url(img/antalya.jpg);
+}
+
+.city-box:nth-child(3){
+    background-image: url(img/bursa.jpg);
+}
+
+.city-box:nth-child(4){
+    background-image: url(img/istanbul.jpg);
+}
+
+.city-box:nth-child(5){
+    background-image: url(img/izmir.jpg);
+}
+
+.city-text{
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: white;
+}
+
+.city-btn{
+    color: white;
+    background-color: crimson;
+    border-radius: 6px;
+    border: none;
+    padding:14px 16px;
+    font-size: 21px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+
+#main-text-mobile{
+    display: none;
+}
+
+/*Application Section*/
+
+#application-fluid{
+    background-color: #ea004b;
+    display: flex;
+    padding: 14px;
+}
+
+#application-wrapper{
+    display: flex;
+    flex-direction: column; 
+}
+
+#application-wrapper-left{
+    width: 100%;
+    order: 2;
+    margin-top: 184px;
+}
+
+.application-title{
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 12px 0px;
+}
+
+.application-text{
+    margin: 24px auto;
+}
+
+#app-logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+
+#app-logo-wrapper img{
+    width: 140px;
+}
+
+#phone-wrapper{
+    position: relative;
+}
+
+#phone-wrapper img{
+    width: 340px;
+    order: 1;
+}
+
+#hidden-headtitle-wrapper-3{
+    margin-top: 124px;
+}
+
+
+
+/*Brand-Definiton Section*/
+
+#brand-def-wrapper{
+    margin-top: 32px;
+    padding: 48px 24px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+#brand-def-wrapper > p{
+    margin: 6px 0px;
+}
+
+#brand-sub-wrapper div{
+    margin-top: 24px;
+}
+
+
+#brand-sub-wrapper p{
+    padding-left: 24px;
+}
+
+#brand-sub-wrapper p::before{
+    content: "✓";
+    color: #ea004b;
+    padding-right: 6px;
+}
+
+/*Bottom Link Section*/
+
+#bottom-link-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f0f0f0;
+    padding-left:24px ;
+    padding-right:24px ;
+    width: 100%;
+}
+
+#bottom-logo-wrapper{
+width: 50%;
+}
+
+#bottom-logo-wrapper img{
+width: 120px;
+height: 23px;
+}
+
+#link-wrapper{
+width: 50%;
+}
+
+
+#bottom-link-wrapper a i{
+display: inline-block;
+border: 1px solid #888888;
+border-radius: 50%;
+padding: 6px;
+font-size: 19px;
+color: #333 ;
+margin-right: 6px;
+transition: all 0.3s ease;
+}
+
+#bottom-link-wrapper a i:hover{
+color: crimson ;
+border-color: crimson ;
+}
+
+
+/*Upper Footer Section*/
+
+
+#upper-footer-wrapper{
+    padding: 14px 0px;
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+}
+
+#upper-policy-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+
+#policy-left{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    order: 3;
+}
+
+#policy-right{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+#policy-right a{
+    font-size: 13px;
+    margin-right:12px;
+    color: #333;
+}
+
+#policy-right a:hover{
+    color: #bb0051;
+}
+
+#code-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 0px;
+    justify-content: center;
+}
+
+#code-wrapper img{
+    width: 100px;
+    height: 100px;
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+#code-wrapper img:hover{
+    cursor: pointer;
+}
+
+#upper-btn-wrapper{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 18px;
+    display: block;
+}
+
+#upper-btn{
+    border: 1px solid rgb(250, 0, 79);
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 12px 84px;
+    color: rgb(250, 0, 79);
+    display: inline-block;
+    font-size: 13px;
+}
+
+
+#upper-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px rgba(77, 1, 25, 0.503);
+}
+
+
+/*--Location Section Mutfaklar*/
+
+#mutfaklar-container{
+    border-bottom: 1px solid #f0f0f0;
+    width: 100%;
+    padding: 48px 24px;
+}
+
+.sub-mutfaklar-box-main-head{
+    padding: 18px 0px;
+    font-size: 18px;
+}
+
+
+
+.sub-mutfaklar-box-head{
+    font-size: 16px;
+    color: rgba(59, 59, 59, 0.750);
+}
+
+.sub-mutfaklar-text {
+    font-size: 14px;
+    padding: 4px 0px;
+    color: rgba(51, 51, 51, 0.800);
+}
+
+#cities-container{
+    width: 100%;
+    padding: 24px 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
+#cities-container .sub-mutfaklar-box-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#cities-container .sub-mutfaklar-box{
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
